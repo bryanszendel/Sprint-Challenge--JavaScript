@@ -90,6 +90,9 @@ console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 const uni = [];
+graduates.forEach(obj =>  {if (obj.university.includes('Uni')) {
+  uni.push(obj.university);
+}})
 console.log(uni);
 
 
@@ -115,6 +118,7 @@ The zoo wants to display both the scientific name and the animal name in front o
 
 */
 const animalNames = [];
+zooAnimals.forEach(obj => animalNames.push(`Name: ${obj['animal_name']}, Scientific: ${obj['scientific_name']}`))
 console.log(animalNames);
 
 /* Request 2: .map()    
